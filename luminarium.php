@@ -2,6 +2,7 @@
 $page_title       = 'The Luminarium | Metalstar';
 $page_description = 'Meet the characters of Metalstar — fighters, healers, prophets, and unknowable strangers whose true natures will reveal themselves when the time is right.';
 $page_keywords    = 'Metalstar, characters, Luminarium, Jayk, Sarah, ROGER, Po, Rensa, Trinidad, John, science fiction, Aaron Hill';
+$page_image       = '/assets/images/luminarium-og.webp';
 $page_url         = 'https://metalstar.us/luminarium/';
 $canonical_url    = 'https://metalstar.us/luminarium/';
 $body_class       = 'page-inner';
