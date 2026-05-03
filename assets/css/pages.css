@@ -214,3 +214,138 @@
         font-size: 2.2rem;
     }
 }
+
+/* --------------------------------------------------------------------------
+   Luminarium Page — Character Guide
+   -------------------------------------------------------------------------- */
+.character-entry {
+    margin-bottom: 30px;
+}
+
+.character-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+}
+
+.character-tagline {
+    font-family: 'Source Sans 3', sans-serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.character-body {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.pose-image-wrapper {
+    flex-shrink: 0;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.pose-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+}
+
+.pose-image-wrapper:hover img {
+    transform: scale(1.03);
+}
+
+.character-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.outfit-image-wrapper {
+    width: 100%;
+    margin-top: 36px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.outfit-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+}
+
+.outfit-image-wrapper:hover img {
+    transform: scale(1.02);
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--accent), transparent);
+    opacity: 0.3;
+}
+
+.diamond {
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    transform: rotate(45deg);
+    margin: 0 16px;
+    flex-shrink: 0;
+}
+
+.luminarium-intro {
+    margin-bottom: 40px;
+}
+
+.luminarium-intro .prophecy {
+    color: var(--accent);
+    font-style: italic;
+}
+
+.luminarium-closing {
+    text-align: center;
+    font-style: italic;
+    color: var(--text-muted);
+    margin-top: 60px;
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.luminarium-closing strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .character-body {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .pose-image-wrapper {
+        width: 100%;
+        max-width: 400px;
+    }
+}

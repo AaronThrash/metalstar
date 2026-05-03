@@ -10,6 +10,8 @@
                 <a href="/summary">SUMMARY</a>
                 <span class="footer-nav-divider">|</span>
                 <a href="/prologue">PROLOGUE</a>
+                <span class="footer-nav-divider">|</span>
+                <a href="/luminarium">LUMINARIUM</a>
             </nav>
             <p class="footer-copy">&copy; 1989-2026 Metalstar All Rights Reserved | Aaron Hill</p>
         </div>

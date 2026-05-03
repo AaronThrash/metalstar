@@ -83,6 +83,7 @@ $body_class       = $body_class ?? '';
                 <a href="/about">About</a>
                 <a href="/summary">Summary</a>
                 <a href="/prologue">Prologue</a>
+                <a href="/luminarium">Luminarium</a>
                 <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
                     <span class="toggle-icon">◑</span>
                 </button>
