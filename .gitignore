@@ -1,0 +1,14 @@
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Error logs
+php_errorlog
+
+# IDE
+.vscode/
+.idea/
+
+# Cinematic builds (large media files)
+cinematic/

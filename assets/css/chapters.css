@@ -1,0 +1,685 @@
+/* ==========================================================================
+   METALSTAR - Chapter Reading Page Styles
+   Layered on top of main.css for chapter content pages.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Reading Progress Bar
+   -------------------------------------------------------------------------- */
+.reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: var(--accent);
+    z-index: 99999;
+    transition: width 0.1s linear;
+}
+
+/* --------------------------------------------------------------------------
+   Chapter Header
+   -------------------------------------------------------------------------- */
+/* Hide nav on chapter pages for desktop, show on mobile */
+.chapter-nav-mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .chapter-nav-mobile-only {
+        display: block;
+    }
+}
+
+/* Chapter page main padding */
+main.page-chapter {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+@media (max-width: 768px) {
+    main.page-chapter {
+        padding-top: calc(var(--nav-height) + 7px) !important;
+        margin-top: 0 !important;
+    }
+}
+
+.chapter-header {
+    text-align: center;
+    padding: 3rem 1.5rem 0.5rem;
+    margin: 0 auto;
+    width: 70vw;
+    max-width: 70vw;
+}
+
+@media (max-width: 768px) {
+    .chapter-header {
+        padding-top: 0;
+    }
+}
+
+.chapter-number {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.chapter-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1.15;
+    margin-bottom: 0;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* Decorative line under chapter title */
+.chapter-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    margin: 0.5rem auto 0;
+    background: var(--accent);
+    opacity: 0.5;
+}
+
+/* --------------------------------------------------------------------------
+   Chapter Epigraph (Blockquote)
+   -------------------------------------------------------------------------- */
+.chapter-epigraph {
+    text-align: center;
+    border-left: none;
+    max-width: 560px;
+    margin: 0 auto 0.5rem;
+    padding: 0 2rem;
+    padding-top: 2.5rem;
+    background: none;
+    position: relative;
+}
+
+.chapter-epigraph::before {
+    content: '"';
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    color: var(--accent);
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1;
+}
+
+.chapter-epigraph p {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+.chapter-epigraph cite,
+.chapter-epigraph .attribution {
+    display: block;
+    font-style: normal;
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+}
+
+.chapter-epigraph cite::before,
+.chapter-epigraph .attribution::before {
+    content: '~ ';
+}
+
+/* --------------------------------------------------------------------------
+   Featured Image
+   -------------------------------------------------------------------------- */
+.chapter-featured-image {
+    width: 70vw;
+    max-width: 70vw;
+    margin: 0 auto 0.75rem;
+}
+
+.chapter-featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    border: none;
+}
+
+/* --------------------------------------------------------------------------
+   Chapter Content Area
+   -------------------------------------------------------------------------- */
+.chapter-content {
+    width: 70vw;
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 0 0 4rem;
+}
+
+/* Paragraph spacing - generous for reading comfort */
+.page-chapter .chapter-content p {
+    font-family: 'Source Sans 3', sans-serif !important;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 1.2rem;
+}
+
+/* First paragraph - no indent */
+.chapter-content p:first-of-type {
+    text-indent: 0;
+}
+
+/* Scene breaks within chapter content */
+.chapter-content hr {
+    margin: 3rem auto;
+}
+
+/* Inline blockquotes within chapter text */
+.chapter-content blockquote {
+    margin: 2rem 0;
+}
+
+/* Bold text within chapter - slightly emphasized */
+.chapter-content strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Images within chapter content */
+.chapter-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+}
+
+/* --------------------------------------------------------------------------
+   Reading Time
+   -------------------------------------------------------------------------- */
+.chapter-reading-time {
+    font-family: var(--font-ui);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   Chapter Navigation - Previous / Next
+   -------------------------------------------------------------------------- */
+.chapter-nav {
+    width: 70vw;
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 2rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.chapter-nav-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    max-width: 45%;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    transition: border-color var(--transition), background-color var(--transition);
+}
+
+.chapter-nav-link:hover {
+    border-color: var(--accent);
+    background: var(--accent-dim);
+}
+
+.chapter-nav-link.prev {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.chapter-nav-link.next {
+    align-items: flex-end;
+    text-align: right;
+    margin-left: auto;
+}
+
+.chapter-nav-label {
+    font-family: var(--font-ui);
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.35rem;
+}
+
+.chapter-nav-label .arrow {
+    color: var(--accent);
+}
+
+.chapter-nav-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.3;
+}
+
+/* Spacer when only one nav link exists */
+.chapter-nav-spacer {
+    flex: 1;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive - Chapter Pages
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .chapter-header {
+        padding: 3rem 1rem 1.5rem;
+    }
+
+    .chapter-epigraph {
+        padding: 1rem;
+    }
+
+    .chapter-header,
+    .chapter-content,
+    .chapter-featured-image,
+    .chapter-nav {
+        width: 85vw;
+        max-width: 85vw;
+    }
+
+    .chapter-content {
+        padding: 0 0 3rem;
+    }
+
+    .chapter-content p {
+        text-align: left;
+        hyphens: none;
+        line-height: 1.75;
+    }
+
+    .chapter-nav {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .chapter-nav-link {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .chapter-nav-link.next {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .chapter-featured-image {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .chapter-title {
+        font-size: 7vw;
+    }
+
+    .chapter-epigraph p {
+        font-size: 1rem;
+    }
+}
+
+/* ==========================================================================
+   READING NAV - Floating Scroll Widget (right sidebar)
+   Up/down chevrons + percentage counter + bookmark resume
+   ========================================================================== */
+
+.ms-reading-nav {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99998;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.ms-reading-nav.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.ms-reading-nav button {
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: rgba(40, 40, 40, 0.85);
+    color: #e0e0e0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 1;
+    padding: 0;
+    transition: background 0.2s ease, transform 0.1s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.ms-reading-nav button:hover {
+    background: rgba(60, 60, 60, 0.95);
+}
+
+.ms-reading-nav button:active {
+    transform: scale(0.92);
+}
+
+.ms-reading-nav .ms-nav-up {
+    border-radius: 22px 22px 4px 4px;
+}
+
+.ms-reading-nav .ms-nav-down {
+    border-radius: 4px 4px 22px 22px;
+}
+
+.ms-reading-nav .ms-chevron {
+    width: 12px;
+    height: 12px;
+    border-right: 2.5px solid #e0e0e0;
+    border-bottom: 2.5px solid #e0e0e0;
+    display: inline-block;
+}
+
+.ms-reading-nav .ms-nav-up .ms-chevron {
+    transform: rotate(-135deg);
+    margin-top: 4px;
+}
+
+.ms-reading-nav .ms-nav-down .ms-chevron {
+    transform: rotate(45deg);
+    margin-bottom: 4px;
+}
+
+.ms-reading-progress {
+    width: 44px;
+    height: 28px;
+    background: rgba(40, 40, 40, 0.85);
+    color: #a0a0a0;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    user-select: none;
+}
+
+/* Resume toast */
+.ms-resume-toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    z-index: 99999;
+    background: rgba(245, 240, 232, 0.95);
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    white-space: nowrap;
+    user-select: none;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.ms-resume-toast.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+}
+
+.ms-resume-toast:active {
+    transform: translateX(-50%) scale(0.96);
+}
+
+/* Floating dark mode toggle - appears/disappears with scroll widget */
+.ms-dark-toggle {
+    position: fixed;
+    right: 20px;
+    bottom: 24px;
+    z-index: 99998;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(40, 40, 40, 0.85);
+    color: #e0e0e0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease, background 0.2s ease;
+    pointer-events: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.ms-dark-toggle.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.ms-dark-toggle:hover {
+    background: rgba(60, 60, 60, 0.95);
+}
+
+@media screen and (max-width: 768px) {
+    .ms-dark-toggle {
+        right: 12px;
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .ms-reading-nav {
+        right: 12px;
+    }
+
+    .ms-reading-nav button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .ms-reading-progress {
+        width: 40px;
+        height: 24px;
+        font-size: 10px;
+    }
+
+    .ms-resume-toast {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+
+    .floating-menu-btn {
+        display: none !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Floating Menu Button (Desktop Chapter Pages)
+   -------------------------------------------------------------------------- */
+.floating-menu-btn {
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 10000;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--bg-elevated);
+    color: var(--text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease;
+    pointer-events: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.floating-menu-btn.visible {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.floating-menu-btn:hover {
+    background: var(--accent);
+    color: #000;
+}
+
+/* --------------------------------------------------------------------------
+   Slide-out Navigation Panel
+   -------------------------------------------------------------------------- */
+.slideout-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 10001;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.slideout-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.slideout-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: var(--bg-elevated);
+    z-index: 10002;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.slideout-nav.open {
+    transform: translateX(0);
+}
+
+.slideout-close {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 1rem;
+    transition: color 0.2s ease;
+}
+
+.slideout-close:hover {
+    color: var(--text-primary);
+}
+
+.slideout-link {
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 0.6rem 0.75rem;
+    border-radius: 6px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.slideout-link:hover {
+    background: rgba(255,255,255,0.05);
+    color: var(--text-primary);
+}
+
+.slideout-chapter {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0.02em;
+    padding: 0.4rem 0.75rem;
+}
+
+.slideout-active {
+    color: var(--accent);
+    background: rgba(255,255,255,0.03);
+}
+
+.slideout-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 0.75rem 0;
+}
+
+.slideout-heading {
+    font-family: var(--font-ui);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    padding: 0.4rem 0.75rem;
+}
