@@ -338,6 +338,74 @@
     font-weight: 600;
 }
 
+/* Region sections */
+.region-section {
+    margin-bottom: 20px;
+}
+
+.region-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+}
+
+.region-tagline {
+    font-family: 'Source Sans 3', sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--accent);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.region-image-wrapper {
+    width: 100%;
+    margin-bottom: 36px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.region-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+}
+
+.region-image-wrapper:hover img {
+    transform: scale(1.02);
+}
+
+.region-text {
+    margin-bottom: 50px;
+}
+
+.region-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0;
+}
+
+.region-separator::before,
+.region-separator::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--accent), transparent);
+    opacity: 0.4;
+}
+
+.region-separator .diamond {
+    width: 10px;
+    height: 10px;
+}
+
 @media (max-width: 900px) {
     .character-body {
         flex-direction: column;
