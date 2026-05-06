@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+    <emailProvider id="metalstar.us">
+        <domain>metalstar.us</domain>
+        <displayName>omaha</displayName>
+        <displayShortName>omaha</displayShortName>
+
+        <incomingServer type="imap">
+            <hostname>mail.metalstar.us</hostname>
+            <port>993</port>
+            <socketType>SSL</socketType>
+            <authentication>password-cleartext</authentication>
+            <username>%EMAILADDRESS%</username>
+        </incomingServer>
+
+        <outgoingServer type="smtp">
+            <hostname>mail.metalstar.us</hostname>
+            <port>465</port>
+            <socketType>SSL</socketType>
+            <authentication>password-cleartext</authentication>
+            <username>%EMAILADDRESS%</username>
+        </outgoingServer>
+    </emailProvider>
+</clientConfig>
