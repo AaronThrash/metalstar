@@ -447,6 +447,27 @@ require __DIR__ . '/inc/header.php';
 
             <div class="separator"><span class="diamond"></span></div>
 
+            <!-- HONG GOKU -->
+            <section class="character-entry">
+                <h2 class="character-name">Hong Goku</h2>
+                <p class="character-tagline">A ramen chef with a samurai&rsquo;s soul and a father&rsquo;s unbreakable heart</p>
+                <div class="character-body">
+                    <div class="pose-image-wrapper">
+                        <img src="/assets/images/luminarium/hong-pose.webp" alt="Hong Goku &mdash; Pose" loading="lazy">
+                    </div>
+                    <div class="character-text">
+                        <p>Hong Goku runs the Red Fin House of Ramen in the Free City of Solos &mdash; a tiny hole-in-the-wall restaurant that seats no more than forty, its sign a whale&rsquo;s fin painted red on a wooden plank hung from rusted iron chains. The broth pot has never been cleaned. Centuries of flavor live in its walls. In a city of thieves and killers, the Red Fin is sacred ground &mdash; the one place where a bowl of noodles comes with warmth, and warmth is the rarest commodity in the underground.</p>
+                        <p>Hong carries the Goku name from the Sengoku era of Japan, the golden age of the shinobi. He taught his daughter Ideo the ways of stealth, sabotage, and silent killing &mdash; the traditions of assassins who masqueraded as farmers and peasants, hiding in plain sight. Neither Hong nor Sun-Yi ever uses the word &ldquo;and.&rdquo; Everything is spoken in separate sentences. It is a small detail, but in Metalstar, the small details are the ones that tell the truth.</p>
+                        <p>In his library stands an ornamental display holding twin swords &mdash; a katana and a wakizashi, paired as a daisho, in the family since the Sengoku period. Green-lacquered rattan over rayskin hilts, brown wooden scabbards. Hong has been waiting for the right person to carry them. When that person arrives, Hong will bow, present the blades, and say the words that every father hopes he never has to say &mdash; the ones that mean letting go.</p>
+                    </div>
+                </div>
+                <div class="outfit-image-wrapper">
+                    <img src="/assets/images/luminarium/hong-outfit.webp" alt="Hong Goku &mdash; Outfit Sheet" loading="lazy">
+                </div>
+            </section>
+
+            <div class="separator"><span class="diamond"></span></div>
+
             <!-- GUNTHER -->
             <section class="character-entry">
                 <h2 class="character-name">Gunther</h2>
@@ -463,6 +484,28 @@ require __DIR__ . '/inc/header.php';
                 </div>
                 <div class="outfit-image-wrapper">
                     <img src="/assets/images/luminarium/gunther-outfit.webp" alt="Gunther — Outfit Sheet" loading="lazy">
+                </div>
+            </section>
+
+            <div class="separator"><span class="diamond"></span></div>
+
+            <!-- DOSHA & KUMAR -->
+            <section class="character-entry">
+                <h2 class="character-name">Dosha &amp; Kumar</h2>
+                <p class="character-tagline">The Shadow and The Protector &mdash; twelve years old and already ghosts</p>
+                <div class="character-body">
+                    <div class="pose-image-wrapper">
+                        <img src="/assets/images/luminarium/dosha-kumar-pose.webp" alt="Dosha &amp; Kumar — The Twins" loading="lazy">
+                    </div>
+                    <div class="character-text">
+                        <p>They work the fighting pit crowds with the coordinated precision of a machine&mdash;one bumps, the other dips. Dosha is the shadow: the one whose fingers find your pocket before you feel the absence. Kumar is the protector: the one who comes barreling through a crowd with a blade drawn the instant his sister calls. They are twelve years old, orphaned, and they have been making their own way in Solos long enough to develop technique that borders on professional.</p>
+                        <p>Rensa spots them because she used to be them. She recognizes the bump-and-dip from a lifetime ago, catches Dosha mid-lift, and rather than punishing her, critiques her form: &ldquo;I spotted you a mile away. You should find a way to hide your arm. Don&rsquo;t reach so far. And you need to drop your shoulder. It&rsquo;s painfully obvious.&rdquo; It is not a lecture. It is a gift&mdash;the kind only someone who survived the same life can give.</p>
+                        <p>When offered a choice between the streets and something greater, the twins choose the streets. Rensa doesn&rsquo;t push. She draws them a map and tells them to use it if they change their minds. Kumar folds it carefully and tucks it inside his shirt, close to his skin, the way one carries something valuable. Dosha watches Rensa with one narrowed eye&mdash;the look of a creature deciding whether something is predator or potential ally&mdash;and then takes her brother&rsquo;s hand and disappears into the crowd like fish returning to water.</p>
+                        <p>&ldquo;I give &rsquo;em a week,&rdquo; Dade says. Rensa says nothing. Her expression is one that Dade has the good sense not to comment on.</p>
+                    </div>
+                </div>
+                <div class="outfit-image-wrapper">
+                    <img src="/assets/images/luminarium/dosha-kumar-outfit.webp" alt="Dosha &amp; Kumar — Outfit Sheet" loading="lazy">
                 </div>
             </section>
 
