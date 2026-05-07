@@ -28,7 +28,7 @@ require __DIR__ . '/inc/header.php';
             <span class="loader-text" id="loaderText">Loading</span>
         </div>
         <video class="hero-video" autoplay muted loop playsinline poster="/assets/images/Jayk-Desert.webp">
-            <source src="/assets/video/Metalstar-Trailer-Website.mp4" type="video/mp4">
+            <source src="/assets/video/Metalstar-Trailer-Special-Edition-Web.mp4" type="video/mp4">
         </video>
         <div class="hero-text">
             <span class="hero-title">METALSTAR</span>
@@ -42,16 +42,14 @@ require __DIR__ . '/inc/header.php';
             <img src="/assets/images/Metalstar-Vectorr.png" alt="Metalstar" class="trailer-logo">
             <p class="trailer-label">OFFICIAL MOVIE TRAILER</p>
             <div class="trailer-embed">
-                <video class="trailer-video" preload="none" poster="/assets/images/Jayk-Desert.webp">
-                    <source src="/assets/video/Metalstar-Offical-Movie-Trailer.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <button class="trailer-play-btn" id="trailerPlayBtn" aria-label="Play trailer">
-                    <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="40" cy="40" r="38" stroke="white" stroke-width="3" opacity="0.8"/>
-                        <polygon points="32,24 58,40 32,56" fill="white" opacity="0.9"/>
-                    </svg>
-                </button>
+                <iframe
+                    src="https://www.youtube.com/embed/lJy6Lm4EdOU?rel=0&modestbranding=1&color=white"
+                    title="Metalstar Official Trailer"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
             </div>
         </div>
     </section>
