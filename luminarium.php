@@ -29,6 +29,46 @@ require __DIR__ . '/inc/header.php';
         <div class="separator"><span class="diamond"></span></div>
 
         <!-- ==============================
+             REGION 0: PRE-DARK EPOCH
+             ============================== -->
+        <section class="region-section">
+            <h2 class="region-header">Before the Dark Epoch</h2>
+            <p class="region-tagline">The golden age that built the future &mdash; and the seeds of its own destruction</p>
+            <div class="region-image-wrapper">
+                <img src="/assets/images/luminarium/region-predarkepoch.webp" alt="Earth before the Dark Epoch — a green utopia of mag-lev vehicles and towering cities wrapped in vegetation" loading="lazy">
+            </div>
+            <div class="region-text">
+                <p>Before the ice came, before the volcanoes and the frozen oceans and the nine-degree drop that ended civilization, the Earth was green. Greener than it had been in centuries. Professor Raymond Lemky&rsquo;s Mag-Lev technology had eliminated the need for paved roads &mdash; vehicles floated on electromagnetic fields, and the planet reclaimed its surface. Parking lots became gardens. Highways became forests. Carbon emissions plummeted and oxygen surged. Humanity looked at its world and believed, for perhaps the first time, that it had solved the fundamental problem of living on Earth without destroying it.</p>
+                <p>It was an age of breathtaking achievement. Biomagnetism &mdash; Lemky&rsquo;s greatest breakthrough &mdash; promised nothing less than the reinvention of matter itself: microscopic magnetic cells capable of storing thought, encoding DNA, and reshaping molecular structures at the will of the engineer. The Atom 2.0, they called it. It would go on to power cloning technology, robotics, and the preservation programs that would one day save the human race.</p>
+                <p>But golden ages are fragile things. Behind the gleaming towers and floating vehicles, powerful people were watching Lemky&rsquo;s work with intentions that had nothing to do with progress. The technology that could extend life indefinitely could also be used to control it. And somewhere in the background, unnoticed by anyone, a piece of alien technology disguised as something ordinary was transmitting data to a world that was already making plans for Earth.</p>
+                <p>The Dark Epoch did not arrive without warning. It arrived without anyone willing to hear it.</p>
+            </div>
+
+            <!-- DR. RAYMOND LEMKY -->
+            <section class="character-entry">
+                <h2 class="character-name">Dr. Raymond Lemky</h2>
+                <p class="character-tagline">The man who recreated the atom &mdash; and paid for it with everything</p>
+                <div class="character-body">
+                    <div class="pose-image-wrapper">
+                        <img src="/assets/images/luminarium/lemky-pose.webp" alt="Dr. Raymond Lemky &mdash; Pose" loading="lazy">
+                    </div>
+                    <div class="character-text">
+                        <p>In 2070, working at the University of London in Ontario, Professor Raymond Lemky perfected Mag-Lev technology &mdash; electromagnetic vehicles that floated inches above the earth, eliminating the need for paved roads forever. The planet returned to green. Carbon emissions plummeted. It was, by itself, a legacy most scientists would die happy having achieved.</p>
+                        <p>Lemky was not most scientists.</p>
+                        <p>His &ldquo;Saturday Morning Tinkerings&rdquo; became legendary &mdash; open lab sessions where students watched him think out loud, connecting disciplines that had no business being connected, leaping from mathematics to consciousness to physics with the restless curiosity of a man who believed the only real limitation was the language we used to describe reality. It was during one of these sessions that he made the breakthrough that would change everything: biomagnetism. Microscopic magnetic cells capable of storing not just data, but the texture of thought itself &mdash; memories, sensations, the quantum-level patterns that make a mind a mind. He had, in effect, recreated the atom. They called it the Atom 2.0, and it turned traditional physics on its head.</p>
+                        <p>The technology would go on to power cloning, robotics, and preservation programs that would one day save the human race. Dr. Lemky did not live to see any of it. He died in 2131, at the age of ninety-one, in a laboratory fire officially attributed to one of his experiments. His granddaughter Sarah carries his name, his legacy, and &mdash; though she does not yet know it &mdash; the key to everything he built.</p>
+                    </div>
+                </div>
+                <div class="outfit-image-wrapper">
+                    <img src="/assets/images/luminarium/lemky-outfit.webp" alt="Dr. Raymond Lemky &mdash; Outfit Sheet" loading="lazy">
+                </div>
+            </section>
+
+        </section><!-- end region: Pre-Dark Epoch -->
+
+        <div class="region-separator"><span class="diamond"></span></div>
+
+        <!-- ==============================
              REGION 1: PROTOGAIA COLONY
              ============================== -->
         <section class="region-section">
@@ -342,7 +382,28 @@ require __DIR__ . '/inc/header.php';
                     </div>
                 </div>
                 <div class="outfit-image-wrapper">
-                    <img src="/assets/images/luminarium/trinidad-outfit.webp" alt="Trinidad &amp; Riley — Outfit Sheet" loading="lazy">
+                    <img src="/assets/images/luminarium/trinidad-outfit.webp" alt="Trinidad &amp; Riley &mdash; Outfit Sheet" loading="lazy">
+                </div>
+            </section>
+
+            <div class="separator"><span class="diamond"></span></div>
+
+            <!-- THE TARATI -->
+            <section class="character-entry">
+                <h2 class="character-name">The Tarati</h2>
+                <p class="character-tagline">An interdimensional being that exists between forms &mdash; and has been watching for a very long time</p>
+                <div class="character-body">
+                    <div class="pose-image-wrapper">
+                        <img src="/assets/images/luminarium/tarati-pose.webp" alt="The Tarati &mdash; Pose" loading="lazy">
+                    </div>
+                    <div class="character-text">
+                        <p>The Tarati are not of this dimension. They exist in a state of constant variant phase &mdash; shifting, flickering, never fully solid, never fully absent. They are immortals, but immortality, it turns out, comes with a price that no mortal would envy: the Tarati cannot die. They have never known endings. And something in their ancient, formless consciousness longs for the one experience that infinity denies them.</p>
+                        <p>The one called Mylan has been watching Trinidad for longer than Trinidad knows. The blind prophet&rsquo;s psychic abilities &mdash; her power to perceive the threads of fate, to see across time and dimension &mdash; have made her visible to beings that most humans will never know exist. Mylan sees in Trinidad something rare: a mind strong enough to survive contact with the interdimensional.</p>
+                        <p>What the Tarati want, and what they are willing to offer in exchange, will force Trinidad to make the most profound choice of her life &mdash; a choice that will change not just who she is, but <em>what</em> she is. The woman who walks the Spice Road may not be the same creature who reaches its end.</p>
+                    </div>
+                </div>
+                <div class="outfit-image-wrapper">
+                    <img src="/assets/images/luminarium/tarati-outfit.webp" alt="The Tarati &mdash; Outfit Sheet" loading="lazy">
                 </div>
             </section>
 
