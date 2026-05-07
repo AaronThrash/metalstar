@@ -8,7 +8,7 @@
 $page_title       = 'Metalstar | A Post-Apocalyptic Sci-Fi Novel by Aaron Hill';
 $page_description = 'Set in the 24th century, Metalstar follows Sarah, a clone wielding a powerful electrostatic cannon, John, another clone, and Jayk, a survivor of the Dark Epoch, as they fight to reclaim Earth from alien invaders.';
 $page_keywords    = 'Metalstar, science fiction, post-apocalyptic, novel, Aaron Hill, clones, aliens, Dark Epoch';
-$page_image       = '/assets/images/metalstar-og.webp';
+$page_image       = 'https://metalstar.us/assets/images/metalstar-og.webp?v=2';
 $page_url         = 'https://metalstar.us/';
 $canonical_url    = 'https://metalstar.us/';
 $page_type        = 'home';

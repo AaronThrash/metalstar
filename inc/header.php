@@ -6,7 +6,7 @@ require_once __DIR__ . '/chapter-data.php';
 $page_title       = $page_title ?? 'Metalstar | A Post-apocalyptic Sci-Fi Mythology';
 $page_description = $page_description ?? 'Set in the 24th century, Metalstar follows Sarah, a clone wielding a powerful electrostatic cannon, John, another clone, and Jayk, a survivor of the Dark Epoch, as they fight to reclaim Earth from alien invaders.';
 $page_keywords    = $page_keywords ?? 'Metalstar, science fiction, graphic novel, post-apocalyptic, Aaron Hill';
-$page_image       = $page_image ?? '/assets/images/metalstar-og.webp';
+$page_image       = $page_image ?? 'https://metalstar.us/assets/images/metalstar-og.webp?v=2';
 $page_url         = $page_url ?? 'https://metalstar.us/';
 $canonical_url    = $canonical_url ?? $page_url;
 $body_class       = $body_class ?? '';
