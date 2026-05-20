@@ -98,7 +98,10 @@ require __DIR__ . '/inc/header.php';
                     </div>
                 </div>
                 <div class="outfit-image-wrapper">
-                    <img src="/assets/images/luminarium/sarah-outfit.webp" alt="Sarah Greene — Outfit Sheet" loading="lazy">
+                    <img src="/assets/images/luminarium/sarah-outfit.webp" alt="Sarah Greene — Character Reference Sheet" loading="lazy">
+                </div>
+                <div class="outfit-image-wrapper" style="margin-top: 2rem;">
+                    <img src="/assets/images/luminarium/sarah-weapon-diagram.webp" alt="D'gorshon Electrostatic Cannon — Weapon Diagram" loading="lazy">
                 </div>
             </section>
 
