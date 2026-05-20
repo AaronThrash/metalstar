@@ -426,6 +426,9 @@ require __DIR__ . '/inc/header.php';
                         <p>Small and watchful, with large brown eyes that scan the horizon with an alertness far beyond his years, Riley is easy to underestimate. That is, perhaps, exactly what keeps them both alive.</p>
                     </div>
                 </div>
+                <div class="outfit-image-wrapper">
+                    <img src="/assets/images/luminarium/riley-outfit.webp" alt="Riley &mdash; Character Reference Sheet" loading="lazy">
+                </div>
             </section>
 
             <div class="separator"><span class="diamond"></span></div>
